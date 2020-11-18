@@ -12,6 +12,8 @@
 1. Create a hashmap
 2. For each element in nums, check if key exists, if yes, return indexes 
 3. If not, create key as target - num and value as index
+Time: O(n)
+Space: O(n)
 """
 
 
