@@ -3,15 +3,16 @@
 #-------------------------------------------------------------------------------
 # By Ying Peng
 # https://leetcode.com/problems/maximum-subarray/
-# Completed 11/18/20
+# Completed 11/19/20
 #-------------------------------------------------------------------------------
 #    Approach   
 #-------------------------------------------------------------------------------
 
 """
-Greedy
-1. Loop through list
-2. Keep updating the local max and global max
+DP Bottom Up, modify nums in-place
+1. Loop through nums
+2. Check if previous num (already modified) > 0
+3. If yes, add previous num to current, if no, continue loop
 
 Time: O(n)
 Space: O(1)
@@ -27,13 +28,14 @@ class MaximumSubarray:
     def __init__(self, nums: [int]):
         self.nums = nums
     def solve(self):
-        max_sum = cur_sum = self.nums[0]
+        max_sum = self.nums[0]
         for i in range(1, len(self.nums)):
-            cur_sum = max(cur_sum + self.nums[i], self.nums[i])
-            max_sum = max(cur_sum, max_sum)
+            if self.nums[i - 1] > 0:
+                self.nums[i] += self.nums[i - 1]
+            max_sum = max(max_sum, self.nums[i])
         return max_sum
 
-
+        
 #-------------------------------------------------------------------------------
 #    Main Leetcode Input Driver
 #-------------------------------------------------------------------------------
