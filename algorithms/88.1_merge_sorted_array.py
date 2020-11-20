@@ -13,7 +13,7 @@ Two-pointer
 1. Start from the end of lists, i for nums1, j for nums2
 2. Compare nums1[i] and nums2[j], the larger one as nums1[m + n - k]
 
-Time: O(n)
+Time: O(m + n)
 Space: O(1)
 """
 
