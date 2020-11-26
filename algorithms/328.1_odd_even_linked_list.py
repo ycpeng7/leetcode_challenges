@@ -14,7 +14,7 @@
 3. cur.next = cur.next.next
 4. prev = cur
 5. cur = temp
-6. If cur.next is None, check whether it's odd or even
+6. If cur.next is None, we reached the last node, check whether it's odd or even
 7. If odd, cur.next = even head, else prev.next = even head
 
 Time: O(n)
