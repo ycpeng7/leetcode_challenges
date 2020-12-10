@@ -85,7 +85,7 @@ class merge_sort():
 
 class quick_sort():
     """
-    1. Set first element as the pivot
+    1. Set last element as the pivot
     2. All those less than pivot goes to left
     3. All those larger goes to right
     """
