@@ -102,7 +102,6 @@ class quick_sort():
     def _sort(self, lis, start: int, end: int):
         if start < end:
             pivot_ind = self._partition(lis, start, end)
-            print(lis)
             self._sort(lis, start, pivot_ind - 1)
             self._sort(lis, pivot_ind + 1, end)
 
