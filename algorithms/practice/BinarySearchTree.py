@@ -1,6 +1,7 @@
 #-------------------------------------------------------------------------------
 #    Implementation of Binary Search Tree
 #-------------------------------------------------------------------------------
+from collections import deque
 
 class Node:
     def __init__(self, val, left=None, right=None):
@@ -84,5 +85,16 @@ class BST:
         if val < cur_node.val:
             return self._search(val, cur_node.left)
         else:
-            return self._search(val, cur_node.right) 
+            return self._search(val, cur_node.right)
+    
+    def level_order_traversal(self):
+        q = deque()
+        q.append(self.root)
+        while q:
+            cur = q.popleft()
+            print(cur.val)
+            q.append(cur.left)
+            q.append(cur.right)
+
+            
 
