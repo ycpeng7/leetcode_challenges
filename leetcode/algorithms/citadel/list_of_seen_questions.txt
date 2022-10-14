@@ -1,0 +1,18 @@
+^ longest substring no duplicate char
+longest matching paranthesis
+^ https://leetcode.com/problems/climbing-stairs/
+^ maze
+^ max size subarray sum equals k
+^ valid palindrone
+different ways to add paranthesis
+^ implement hashtable, hashing coliision, probing
+sub matrix sum (for preprocessing, store size of Mij submatrix in a map : Mijkl = Mkl - Mil - Mkj + Mij)
+^ house robber (https://leetcode.com/problems/house-robber/)
+implement a stack with "class Node { String val ; Node next;}" whatif we want to initilize the stack with any type of object (instead of only accept string)?
+^ pow(p,q)
+Given a 2D matrix with numbers, you start from top left and each time move either right or down and finally reach bottom right, return max sum. followup : return max product
+https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/
+course schedule
+dijkstra (path with cost, get minimal cost)
+https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+https://leetcode.com/problems/isomorphic-strings/
